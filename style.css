@@ -1,0 +1,143 @@
+body {
+  background-color: rgb(123, 148, 143);
+  margin: auto;
+}
+
+h1 {
+  text-align: left;
+  font-size: 70px;
+  padding: 0 40vw 0 10vw;
+  display: inline-block;
+}
+
+#Navigation {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 40px;
+  color: rgb(79, 251, 93);
+  padding: 1vw;
+}
+
+header {
+  background-color: rgb(11, 140, 125);
+  color: rgb(79, 251, 93);
+  margin: 0;
+  padding: 0.45vw;
+}
+
+#Identifiers {
+  font-size: 50px;
+  text-align: center;
+}
+
+#Craig_Pic {
+  display: inline-block;
+  border-radius: 50px;
+  padding: 0 26.5vw;
+  width: 15vw;
+  height: auto;
+}
+
+#Bio {
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#Quote {
+  display: inline-block;
+  padding-left: 17vw;
+  font-family: cursive;
+  font-size: 30px;
+}
+
+#Author {
+  display: inline-block;
+  font-size: 30px;
+  font-family: cursive;
+  padding-left: 30vw;
+}
+
+#Home_Body {
+  background-color: rgb(20, 101, 144);
+  color: rgb(28, 206, 241);
+  margin: 0 15vw;
+  padding: 1vw;
+}
+
+#About_Body {
+  background-color: rgb(20, 101, 144);
+  color: rgb(28, 206, 241);
+  margin: 0 15vw;
+  padding: 1vw;
+}
+
+footer {
+  background-color: rgb(11, 140, 125);
+  padding-left: 38vw;
+}
+
+#Social_Image {
+  width: 4vw;
+  height: auto;
+  display: inline-block;
+  padding: 1vw;
+}
+
+#First_Hobby {
+  font-size: 25px;
+}
+
+#Second_Hobby {
+  font-size: 25px;
+}
+
+#Third_Hobby {
+  font-size: 25px;
+}
+
+#Portfolio_Body {
+  background-color: rgb(20, 101, 144);
+  color: rgb(28, 206, 241);
+  margin: 0 15vw;
+  padding: 1vw;
+}
+
+#First_Project {
+ font-size: 25px;
+}
+
+#Second_Project {
+  font-size: 25px;
+}
+
+#Third_Project {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 50px;
+  
+}
+
+h3 {
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+#Tank {
+  width: 20vw;
+  height: auto;
+}
+
+#Camping {
+  width: 20vw;
+  height: auto;
+}
+
+#Scuba {
+  width: 30vw;
+  height: auto;
+  
+}
