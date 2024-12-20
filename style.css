@@ -1,17 +1,26 @@
 body {
   background-color: rgb(123, 148, 143);
-  margin: auto;
+  margin: 0;
 }
 
 h1 {
-  text-align: left;
   font-size: 70px;
-  padding: 0 40vw 0 10vw;
-  display: inline-block;
+  display: flexbox;
+  position: absolute;
+  top: 2.5vh;
+  left: 2vw;
+  margin: 0;
 }
 
-#Navigation {
-  display: inline-block;
+#Navigation_Bar {
+  display: flexbox;
+  position: absolute;
+  top: 4vh;
+  left: 75vw;
+  margin: 0;
+}
+
+.Navigation {
   text-decoration: none;
   font-size: 40px;
   color: rgb(79, 251, 93);
@@ -19,51 +28,60 @@ h1 {
 }
 
 header {
+  width: 100vw;
+  height: 10vh;
   background-color: rgb(11, 140, 125);
   color: rgb(79, 251, 93);
-  margin: 0;
-  padding: 0.45vw;
+}
+
+#Home_Body {
+  display: grid;
+  position: relative;
+  grid-template: 
+  "one"
+  "two"
+  "three"
+  "four"
+  "five";
+  background-color: rgb(20, 101, 144);
+  color: rgb(28, 206, 241);
+  margin: 0 15vw;
+  width: 70vw;
+  height: 80vh;
+  justify-items: center;
 }
 
 #Identifiers {
   font-size: 50px;
+  grid-area: one;
+  text-align: center;
+}
+
+#Bio {
+  grid-area: two;
+  font-size: 30px;
   text-align: center;
 }
 
 #Craig_Pic {
-  display: inline-block;
-  border-radius: 50px;
-  padding: 0 26.5vw;
-  width: 15vw;
-  height: auto;
-}
-
-#Bio {
-  display: inline-block;
-  font-size: 20px;
-  text-align: center;
-  font-size: 30px;
+  grid-area: three;
+  border-radius: 60px;
+  width: 20vw;
+  justify-content: center;
+  align-items: center;
 }
 
 #Quote {
-  display: inline-block;
-  padding-left: 17vw;
-  font-family: cursive;
+  grid-area: four;
   font-size: 30px;
+  text-align: center;
 }
 
 #Author {
-  display: inline-block;
+  grid-area: five;
   font-size: 30px;
   font-family: cursive;
-  padding-left: 30vw;
-}
-
-#Home_Body {
-  background-color: rgb(20, 101, 144);
-  color: rgb(28, 206, 241);
-  margin: 0 15vw;
-  padding: 1vw;
+  text-align: center;
 }
 
 #About_Body {
@@ -74,15 +92,41 @@ header {
 }
 
 footer {
+  display: grid;
+  grid-template: 
+  "one two three";
+  gap: 5vw;
+  position: absolute;
+  top: 90vh;
+  left: 0;
+  height: 10vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(11, 140, 125);
-  padding-left: 38vw;
 }
 
 #Social_Image {
-  width: 4vw;
+  display: flexbox;
+  position: absolute;
+}
+
+.facebook {
+  grid-area: one;
+  width: 5vw;
   height: auto;
-  display: inline-block;
-  padding: 1vw;
+}
+
+.linkedin {
+  grid-area: two;
+  width: 5vw;
+  height: auto;
+}
+
+.github {
+  grid-area: three;
+  width: 5vw;
+  height: auto;
 }
 
 #First_Hobby {
@@ -116,11 +160,6 @@ footer {
   font-size: 25px;
 }
 
-h2 {
-  font-size: 50px;
-  
-}
-
 h3 {
   font-size: 40px;
   text-decoration: underline;
@@ -139,5 +178,4 @@ h3 {
 #Scuba {
   width: 30vw;
   height: auto;
-  
 }
