@@ -13,18 +13,34 @@ h1 {
 }
 
 #Navigation_Bar {
-  display: flexbox;
-  position: absolute;
+  display: grid;
+  position: relative;
+  grid-template: 
+  "one two three";
   top: 4vh;
-  left: 75vw;
+  left: 70vw;
+  gap: 2vw;
   margin: 0;
+  width: 25vw;
+  justify-content: end;
 }
 
 .Navigation {
   text-decoration: none;
   font-size: 40px;
   color: rgb(79, 251, 93);
-  padding: 1vw;
+}
+
+#Home_Page {
+  grid-area: one;
+}
+
+#Portfolio_Page {
+  grid-area: two;
+}
+
+#About_Page {
+  grid-area: three;
 }
 
 header {
@@ -55,12 +71,14 @@ header {
   font-size: 50px;
   grid-area: one;
   text-align: center;
+  padding: 2%;
 }
 
 #Bio {
   grid-area: two;
   font-size: 30px;
   text-align: center;
+  padding: 2%;
 }
 
 #Craig_Pic {
@@ -96,14 +114,12 @@ footer {
   grid-template: 
   "one two three";
   gap: 5vw;
-  position: absolute;
-  top: 90vh;
-  left: 0;
   height: 10vh;
   width: 100vw;
   align-items: center;
   justify-content: center;
   background-color: rgb(11, 140, 125);
+  position: sticky;
 }
 
 #Social_Image {
