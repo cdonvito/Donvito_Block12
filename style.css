@@ -1,23 +1,21 @@
-body {
-  background-color: rgb(123, 148, 143);
-  margin: 0;
-}
-
-h1 {
-  font-size: 70px;
+header {
   display: flexbox;
-  position: absolute;
-  top: 2.5vh;
-  left: 2vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  width: 100vw;
+  background-color: rgb(11, 140, 125);
+  color: rgb(79, 251, 93);
   margin: 0;
 }
 
+/* Navigation */
 #Navigation_Bar {
   display: grid;
   position: relative;
-  grid-template: 
-  "one two three";
-  top: 4vh;
+  grid-template: "one two three";
+  top: 3vh;
   left: 70vw;
   gap: 2vw;
   margin: 0;
@@ -27,7 +25,7 @@ h1 {
 
 .Navigation {
   text-decoration: none;
-  font-size: 40px;
+  font-size: calc(15px + 1.5vw);
   color: rgb(79, 251, 93);
 }
 
@@ -43,83 +41,45 @@ h1 {
   grid-area: three;
 }
 
-header {
-  width: 100vw;
-  height: 10vh;
-  background-color: rgb(11, 140, 125);
-  color: rgb(79, 251, 93);
+body {
+  background-color: rgb(123, 148, 143);
+  margin: 0;
 }
 
-#Home_Body {
-  display: grid;
-  position: relative;
-  grid-template: 
-  "one"
-  "two"
-  "three"
-  "four"
-  "five";
-  background-color: rgb(20, 101, 144);
-  color: rgb(28, 206, 241);
-  margin: 0 15vw;
-  width: 70vw;
-  height: 80vh;
-  justify-items: center;
+h1 {
+  font-size: calc(15px + 1.5vw);
+  display: flexbox;
+  position: absolute;
+  top: 3vh;
+  left: 2vw;
+  margin: 0;
 }
 
-#Identifiers {
-  font-size: 50px;
-  grid-area: one;
-  text-align: center;
-  padding: 2%;
+h3 {
+  font-size: 40px;
+  text-decoration: underline;
 }
 
-#Bio {
-  grid-area: two;
-  font-size: 30px;
-  text-align: center;
-  padding: 2%;
-}
-
-#Craig_Pic {
-  grid-area: three;
-  border-radius: 60px;
-  width: 20vw;
-  justify-content: center;
-  align-items: center;
-}
-
-#Quote {
-  grid-area: four;
-  font-size: 30px;
-  text-align: center;
-}
-
-#Author {
-  grid-area: five;
-  font-size: 30px;
-  font-family: cursive;
-  text-align: center;
-}
-
-#About_Body {
-  background-color: rgb(20, 101, 144);
-  color: rgb(28, 206, 241);
-  margin: 0 15vw;
-  padding: 1vw;
-}
-
+/* Footer Section */
 footer {
-  display: grid;
-  grid-template: 
-  "one two three";
-  gap: 5vw;
+  display: flexbox;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   height: 10vh;
   width: 100vw;
+  background-color: rgb(11, 140, 125);
+  z-index: 2;
+}
+
+#Footer_Links {
+  display: grid;
+  grid-template: "one two three";
+  gap: 5vw;
   align-items: center;
   justify-content: center;
-  background-color: rgb(11, 140, 125);
-  position: sticky;
+  height: 10vh;
+  width: 100vw;
 }
 
 #Social_Image {
@@ -129,69 +89,192 @@ footer {
 
 .facebook {
   grid-area: one;
-  width: 5vw;
+  width: 4vw;
   height: auto;
 }
 
 .linkedin {
   grid-area: two;
-  width: 5vw;
+  width: 4vw;
   height: auto;
 }
 
 .github {
   grid-area: three;
-  width: 5vw;
+  width: 7vw;
   height: auto;
 }
 
-#First_Hobby {
-  font-size: 25px;
-}
-
-#Second_Hobby {
-  font-size: 25px;
-}
-
-#Third_Hobby {
-  font-size: 25px;
-}
-
-#Portfolio_Body {
+/* Home Page */
+#Home_Body {
+  display: grid;
+  position: relative;
+  top: 10vh;
+  grid-template:
+    "one" 
+    "two"
+    "three"
+    "four"
+    "five";
   background-color: rgb(20, 101, 144);
   color: rgb(28, 206, 241);
-  margin: 0 15vw;
-  padding: 1vw;
+  width: 100vw;
+  height: 80vh;
+  justify-items: center;
+  text-align: center;
+  overflow-y: auto;
+  align-items: end;
+  align-content: stretch;
+  margin: 0;
 }
 
-#First_Project {
- font-size: 25px;
+#Identifiers {
+  font-size: 50px;
+  grid-area: one;
+  margin: 0;
 }
 
-#Second_Project {
-  font-size: 25px;
+#Bio {
+  grid-area: two;
+  font-size: 30px;
+  margin: 0;
 }
 
-#Third_Project {
-  font-size: 25px;
+#Craig_Pic {
+  grid-area: three;
+  border-radius: 60px;
+  width: 20%;
+  margin: 0;
 }
 
-h3 {
-  font-size: 40px;
-  text-decoration: underline;
+#Quote {
+  grid-area: four;
+  font-size: 30px;
+  margin: 0;
 }
 
-#Tank {
-  width: 20vw;
-  height: auto;
+#Author {
+  grid-area: five;
+  font-size: 30px;
+  font-family: cursive;
+  margin: 0;
 }
 
-#Camping {
-  width: 20vw;
-  height: auto;
+/* About Page */
+#About_Body {
+  display: grid;
+  position: relative;
+  grid-template:
+    "one"
+    "two"
+    "three"
+    "four";
+  top: 10vh;
+  background-color: rgb(20, 101, 144);
+  color: rgb(28, 206, 241);
+  justify-items: center;
+  text-align: center;
+  height: 80vh;
+  overflow-y: auto;
 }
 
-#Scuba {
+#Free_Time {
+  grid-area: one;
+  font-size: 35px;
+}
+
+.Hobby_Text {
+  font-size: 30px;
+  padding: 2vw;
+}
+
+#Hobby_Body {
+  border: 1px Solid black;
+}
+
+#Salt_Img {
   width: 30vw;
   height: auto;
 }
+
+#Camping_Img {
+  width: 30vw;
+  height: auto;
+}
+
+#Scuba_Img {
+  width: 30vw;
+  height: auto;
+  padding: 3vh;
+}
+
+/* Portfolio Page */
+#Portfolio_Body {
+  display: grid;
+  position: relative;
+  grid-template: 
+  "one"
+  "two"
+  "three"
+  "four";
+  top: 10vh;
+  background-color: rgb(20, 101, 144);
+  color: rgb(28, 206, 241);
+  justify-items: center;
+  text-align: center;
+  height: 80vh;
+  align-content: space-between;
+  overflow-y: auto;
+}
+
+.Proj_Body {
+  border: 3px solid black;
+}
+
+#Portfolio_Title {
+  grid-area: one;
+  font-size: 35px;
+}
+
+#Sub_Gen {
+  grid-area: two;
+}
+
+#Proj_Folder {
+  grid-area: three;
+}
+
+#Jira {
+  grid-area: four;
+}
+
+.Portfolio_Text {
+  font-size: 25px;
+}
+
+/* @media (maxwidth=1024) {
+  #Salt_Aquarium {
+    grid-area: two;
+    display: grid;
+    position: relative;
+    grid-template: 
+    ;
+  }
+
+  #About_Body {
+    display: grid;
+    position: relative;
+    grid-template:
+      "one"
+      "two"
+      "three"
+      "four";
+    top: 10vh;
+    background-color: rgb(20, 101, 144);
+    color: rgb(28, 206, 241);
+    justify-items: center;
+    text-align: center;
+    height: 80vh;
+    overflow-y: auto;
+  }
+} */

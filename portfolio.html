@@ -14,69 +14,78 @@
       <h1>Craig Donvito</h1>
       <section id="Navigation_Bar">
         <a id="Home_Page" class="Navigation" href="index.html">Home</a>
-        <a id="Portfolio_Page" class="Navigation" href="portfolio.html">Portfolio</a>
+        <a id="Portfolio_Page" class="Navigation" href="portfolio.html"
+          >Portfolio</a
+        >
         <a id="About_Page" class="Navigation" href="about.html">About</a>
       </section>
     </header>
 
     <article id="Portfolio_Body">
       <!-- Adding in my projects with descriptions into the body of the text -->
-      <h2>My Creations so Far!</h2>
+      <h2 id="Portfolio_Title">My Creations so Far!</h2>
 
-      <h3>Automated Submittal Generator</h3>
+      <section class="Proj_Body" id="Sub_Gen">
+        <h3>Automated Submittal Generator</h3>
 
-      <p id="First_Project">
-        During my time working as a project engineer at FLASH, I built a
-        submittal generator using Google Apps Script. The primary objective of
-        this code was to automate submittal packets containing all of the
-        product information relative to that specific project. Using a Google
-        Form, the user enters in the relevant project specific information. Upon
-        submitting the form, the code pulls togther all of the relevant product
-        data sheets based on the user's selections. It compiles all of these
-        sheets into a folder and then makes a merged PDF of all of the
-        documentation and saves it to a subsequent folder. It also creates a
-        cover page, scope of work page that is tailored to the project, a table
-        on contents, and numbers all of the pages of the packet. When the code
-        is finished running it sends the user an email letting them know that
-        the generation was successful and where they can find the saved files.
-      </p>
+        <p class="Portfolio_Text">
+          During my time working as a project engineer at FLASH, I built a
+          submittal generator using Google Apps Script. The primary objective of
+          this code was to automate submittal packets containing all of the
+          product information relative to that specific project. Using a Google
+          Form, the user enters in the relevant project specific information.
+          Upon submitting the form, the code pulls togther all of the relevant
+          product data sheets based on the user's selections. It compiles all of
+          these sheets into a folder and then makes a merged PDF of all of the
+          documentation and saves it to a subsequent folder. It also creates a
+          cover page, scope of work page that is tailored to the project, a
+          table on contents, and numbers all of the pages of the packet. When
+          the code is finished running it sends the user an email letting them
+          know that the generation was successful and where they can find the
+          saved files.
+        </p>
+      </section>
 
-      <h3>Project Folder Automation</h3>
+      <section class="Proj_Body" id="Proj_Folder">
+        <h3>Project Folder Automation</h3>
 
-      <p id="Second_Project">
-        Another tool I created while working at FLASH was a way to automate
-        project folder creation. FLASH utilizes a CRM (customer relationship
-        management) tool called Salesforce. I built a way to automatically
-        create a project folder once a new opportunity in Salesforce is created.
-        I also created a local database with all of these opportunities to check
-        for folders existing in the repository that should not belong.
-      </p>
+        <p class="Portfolio_Text">
+          Another tool I created while working at FLASH was a way to automate
+          project folder creation. FLASH utilizes a CRM (customer relationship
+          management) tool called Salesforce. I built a way to automatically
+          create a project folder once a new opportunity in Salesforce is
+          created. I also created a local database with all of these
+          opportunities to check for folders existing in the repository that
+          should not belong.
+        </p>
+      </section>
 
-      <h3>Jira Design Ticketing</h3>
+      <section class="Proj_Body" id="Jira">
+        <h3>Jira Design Ticketing</h3>
 
-      <p id="Third_Project">
-        Another tool I built while at FLASH was a design ticketing sytem
-        utilized by our Field Design Engineers. This ticketing sytem allowed
-        employees to request an AutoCAD drawing of their specfic project. This
-        allowed for a streamline way to track drawing progress.
-      </p>
+        <p class="Portfolio_Text">
+          Another tool I built while at FLASH was a design ticketing sytem
+          utilized by our Field Design Engineers. This ticketing sytem allowed
+          employees to request an AutoCAD drawing of their specfic project. This
+          allowed for a streamline way to track drawing progress.
+        </p>
+      </section>
     </article>
 
     <footer>
-      <a id="Social_Link" href="https://www.facebook.com/craigdonvito"
-        ><img class="facebook" src="Images/facebook.webp" alt="facebook"
-      /></a>
-      <a
-        id="Social_Link"
-        href="https://www.linkedin.com/in/craig-donvito-aa098011a/"
-        ><img class="linkedin" src="Images/linkedin.png" alt="linkedin"
-      /></a>
-      <a id="Social_Link" href="https://github.com/cdonvito"
-        ><img
-          class="github"
-          src="Images/GitHub-Logo.png"
-          alt="github"
-      /></a>
+      <section id="Footer_Links">
+        <a id="Social_Link" href="https://www.facebook.com/craigdonvito"
+          ><img class="facebook" src="Images/facebook.webp" alt="facebook"
+        /></a>
+        <a
+          id="Social_Link"
+          href="https://www.linkedin.com/in/craig-donvito-aa098011a/"
+          ><img class="linkedin" src="Images/linkedin.png" alt="linkedin"
+        /></a>
+        <a id="Social_Link" href="https://github.com/cdonvito"
+          ><img class="github" src="Images/GitHub-Logo.png" alt="github"
+        /></a>
+      </section>
     </footer>
   </body>
 </html>
