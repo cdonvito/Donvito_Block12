@@ -1,5 +1,5 @@
 header {
-  display: flexbox;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -14,7 +14,7 @@ header {
 #Navigation_Bar {
   display: grid;
   position: relative;
-  grid-template: "one two three";
+  grid-template: "one two three four";
   top: 3vh;
   left: 70vw;
   gap: 2vw;
@@ -41,14 +41,19 @@ header {
   grid-area: three;
 }
 
+#Contact_Page {
+  grid-area: four;
+}
+
 body {
   background-color: rgb(123, 148, 143);
   margin: 0;
+  z-index: -1;
 }
 
 h1 {
   font-size: calc(15px + 1.5vw);
-  display: flexbox;
+  display: flex;
   position: absolute;
   top: 3vh;
   left: 2vw;
@@ -62,7 +67,7 @@ h3 {
 
 /* Footer Section */
 footer {
-  display: flexbox;
+  display: flex;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -80,11 +85,6 @@ footer {
   justify-content: center;
   height: 10vh;
   width: 100vw;
-}
-
-#Social_Image {
-  display: flexbox;
-  position: absolute;
 }
 
 .facebook {
@@ -111,7 +111,7 @@ footer {
   position: relative;
   top: 10vh;
   grid-template:
-    "one" 
+    "one"
     "two"
     "three"
     "four"
@@ -195,28 +195,31 @@ footer {
 #Salt_Img {
   width: 30vw;
   height: auto;
+  border-radius: 10%;
 }
 
 #Camping_Img {
   width: 30vw;
   height: auto;
+  border-radius: 10%;
 }
 
 #Scuba_Img {
   width: 30vw;
   height: auto;
   padding: 3vh;
+  border-radius: 20%;
 }
 
 /* Portfolio Page */
 #Portfolio_Body {
   display: grid;
   position: relative;
-  grid-template: 
-  "one"
-  "two"
-  "three"
-  "four";
+  grid-template:
+    "one"
+    "two"
+    "three"
+    "four";
   top: 10vh;
   background-color: rgb(20, 101, 144);
   color: rgb(28, 206, 241);
@@ -250,6 +253,46 @@ footer {
 
 .Portfolio_Text {
   font-size: 25px;
+}
+
+/* Contact Page */
+#Contact_Body {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10vh;
+  width: 100vw;
+  height: 80vh;
+  background-color: rgb(20, 101, 144);
+  overflow-y: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#Contact_Me {
+  font-size: 70px;
+  color: rgb(79, 251, 93);
+  grid-area: one;
+}
+
+#form {
+  font-size: 40px;
+  color: rgb(79, 251, 93);
+}
+
+/* Submission Sucess Page */
+
+#Submission_Success {
+  display: flex;
+  position: relative;
+  top: 10vh;
+  width: 100vw;
+  height: 80vh;
+  font-size: 50px;
+  text-align: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(20, 101, 144);
 }
 
 /* @media (maxwidth=1024) {

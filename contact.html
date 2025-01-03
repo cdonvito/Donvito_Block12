@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <!-- Adding in Navigation Header -->
+      <!-- Adding in Navigation Header. The same as the landing page -->
       <h1>Craig Donvito</h1>
       <section id="Navigation_Bar">
         <a id="Home_Page" class="Navigation" href="index.html">Home</a>
@@ -21,27 +21,42 @@
         <a id="Contact_Page" class="Navigation" href="contact.html">Contact</a>
       </section>
     </header>
-    <section id="Home_Body">
-      <!-- Adding in Body information on landing page -->
-      <h2 id="Identifiers">Engineer, Innovator, Problem Solver</h2>
 
-      <p id="Bio">
-        Highly motivated and passionate individual with 8+ years of experience
-        in engineering and 6+ years in management looking for opportunity to
-        expand knowledge and diversify my skill set.
-      </p>
+    <section id="Contact_Body">
+      <h2 id="Contact_Me">Contact Me:</h2>
 
-      <img src="Images/Craig.jpg" id="Craig_Pic" /><br />
+      <form action="success.html" id="form">
+        <label for="name">Name:</label><br />
+        <input
+          name="name"
+          type="text"
+          style="width: 600px; height: 30px; font-size: 30px"
+        /><br />
 
-      <p id="Quote">
-        “Scientists investigate that which already is; engineers create that
-        which has never been.”
-      </p>
+        <br /><label for="email">Email:</label><br />
+        <input
+          name="email"
+          type="email"
+          style="width: 600px; height: 30px; font-size: 30px"
+        /><br />
 
-      <p id="Author">-Albert Einstein</p>
+        <br /><label for="message">Message:</label><br />
+        <textarea
+          name="message"
+          type="text"
+          style="width: 600px; height: 10vh; font-size: 30px"
+        >
+        </textarea>
+        <br />
+
+        <br /><input
+          class="submit_btn"
+          type="submit"
+          style="width: 150px; height: 70px; font-size: 30px"
+        /><br />
+      </form>
     </section>
 
-    <!-- Adding in footer with links to relevant social pages. Each link will be a logo -->
     <footer>
       <section id="Footer_Links">
         <a id="Social_Link" href="https://www.facebook.com/craigdonvito"
