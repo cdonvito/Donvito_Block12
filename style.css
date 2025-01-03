@@ -280,8 +280,7 @@ footer {
   color: rgb(79, 251, 93);
 }
 
-/* Submission Sucess Page */
-
+/* Submission Success Page */
 #Submission_Success {
   display: flex;
   position: relative;
@@ -289,8 +288,9 @@ footer {
   width: 100vw;
   height: 80vh;
   font-size: 50px;
-  text-align: center;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   color: white;
   background-color: rgb(20, 101, 144);
 }
