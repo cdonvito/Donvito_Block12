@@ -231,7 +231,7 @@ footer {
 }
 
 .Proj_Body {
-  border: 3px solid black;
+  border: 3px solid green;
 }
 
 #Portfolio_Title {
@@ -295,29 +295,44 @@ footer {
   background-color: rgb(20, 101, 144);
 }
 
-/* @media (maxwidth=1024) {
-  #Salt_Aquarium {
-    grid-area: two;
-    display: grid;
-    position: relative;
-    grid-template: 
-    ;
+@media screen and (max-width=1050) {
+  #Salt_Img {
+    width: 700px !important;
   }
+  
+  #Camping_Img {
+    width: 700px !important;
+  }
+  
+  #Scuba_Img {
+    width: 700px !important;
+  }
+}
 
-  #About_Body {
-    display: grid;
-    position: relative;
-    grid-template:
-      "one"
-      "two"
-      "three"
-      "four";
-    top: 10vh;
-    background-color: rgb(20, 101, 144);
-    color: rgb(28, 206, 241);
-    justify-items: center;
-    text-align: center;
-    height: 80vh;
-    overflow-y: auto;
+@media screen and (max-width=768) {
+  #Salt_Img {
+    width: 650px !important;
   }
-} */
+  
+  #Camping_Img {
+    width: 650px !important;
+  }
+  
+  #Scuba_Img {
+    width: 650px !important;
+  }
+}
+
+@media screen and (max-width=320) {
+  #Salt_Img {
+    width: 100px !important;
+  }
+  
+  #Camping_Img {
+    width: 100px !important;
+  }
+  
+  #Scuba_Img {
+    width: 100px !important;
+  }
+}
