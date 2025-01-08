@@ -295,7 +295,7 @@ footer {
   background-color: rgb(20, 101, 144);
 }
 
-@media screen and (max-width=1050) {
+@media(max-width=1050px) {
   #Salt_Img {
     width: 700px !important;
   }
@@ -309,7 +309,7 @@ footer {
   }
 }
 
-@media screen and (max-width=768) {
+@media(max-width=768px) {
   #Salt_Img {
     width: 650px !important;
   }
@@ -323,7 +323,7 @@ footer {
   }
 }
 
-@media screen and (max-width=320) {
+@media(max-width=320px) {
   #Salt_Img {
     width: 100px !important;
   }
